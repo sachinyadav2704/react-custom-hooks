@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useInterval from "../hooks/useInterval";
 
 const Interval = () => {
@@ -6,7 +6,7 @@ const Interval = () => {
 
   useInterval(() => {
     setCount((prevCount) => prevCount + 1);
-  }, 1000); // Update every 1 second
+  }, 1000);
 
   return (
     <div>
